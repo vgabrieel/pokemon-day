@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon do Dia</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/cadastro.css">
+</head>
+
+<body>
+
+    <h1>Cadastro</h1>
+    <form action="/cadastro" method="POST" id="form_cadastro">
+        <label>Nome</label>
+        <input type="text" name="nome" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Senha</label>
+        <input type="password" name="senha" required>
+
+        <label>Data de Nascimento</label>
+        <input type="date" name="nascimento" required>
+
+        <div id="buttons_form">
+            <button type="submit">Cadastrar</button>
+            <a href="/login">Já tenho uma conta: Login</a>
+        </div>
+    </form>
+
+    <footer>
+        <a href="/">Pokémon de Hoje</a>
+        <p style="font-weight: bold;">&gt; Perfil</p>
+    </footer>
+
+    <script src="/script/script.js"></script>
+</body>
+
+</html>

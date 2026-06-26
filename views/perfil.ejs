@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon do Dia</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/perfil.css">
+</head>
+
+<body>
+    
+    <h1>Bem-vindo(a), <%= usuario.nome %>!</h1>
+
+    <main>
+        <div id="detalhes">
+            <h1><%= nascimentoFormatado %></h1>
+
+            <h2>
+                #<%= pokemon.id %> -
+                    <%= pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1) %>
+            </h2>
+        </div>
+
+        <img src="<%= pokemon.sprites.other['official-artwork'].front_default %>" alt="<%= pokemon.name %>">
+    </main>
+
+    <p>
+        <%= descricao %>
+    </p>
+
+    <footer>
+        <a href="/">Sair do Perfil</a>
+        <p style="font-weight: bold;">&gt; Perfil</p>
+    </footer>
+
+</body>
+
+</html>

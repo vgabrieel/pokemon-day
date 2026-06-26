@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon do Dia</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+
+    <h1>Login</h1>
+    <form action="/login" method="POST" id="form_login">
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Senha</label>
+        <input type="password" name="senha" required>
+
+        <div id="buttons_form">
+            <button type="submit">Login</button>
+            <a href="/cadastro">Sou um novo usuário: Cadastro</a>
+        </div>
+    </form>
+
+    <% if (typeof erro !=='undefined' ) { %>
+        <p style="color:red">
+            <%= erro %>
+        </p>
+        <% } %>
+
+    <footer>
+        <a href="/">Pokémon de Hoje</a>
+        <p style="font-weight: bold;">&gt; Perfil</p>
+    </footer>
+</body>
+
+</html>
